@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+body{
+  font-size: 10px;
+}
+
+.image{
+  background-image:url("../images/grapefruit.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+}
+
+    /* section
+------------------------------------------------------------*/
+h1{
+  font-size: 4em;
+  text-align: center;
+  margin: 1em auto;
+  color: orange;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 3% 5%;
+}
+
+.merit-box {
+  border: solid 1px #e6e48a;
+  margin: 1.2em  ;
+  flex: 1;
+  p{
+    padding: 20px;
+    color:#4B586E;
+    font-size: 1.5em;
+    line-height: 1.4em;
+  }
+  
+  h3{
+  height: 15%;
+  font-size: 2em;
+  padding: 15px;
+  text-align: center;
+  color:#66653d;
+  background-color:#e6e48a;
+  }
+}
+   
+    /* aside
+------------------------------------------------------------*/
+aside {
+  background-color:#ffc14d;
+  padding: 100px 0;
+  text-align: center;
+  color: #FFF; 
+  font-size: 200%;
+}
+
+button.button1{
+  width: 200px;
+  font-size: 0.8em;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  text-align: center;  
+  border-radius: 5px;
+  padding: 10px 30px;
+  border-style: none;
+  text-decoration: none;
+  background-color: #3399ff;
+  margin: 15px auto;}
+  
+button.button1:hover{
+  background-color: #99ceff;
+}
+
+
+/* @media
+------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .image{
+  background-image: url("../images/grapefruit.jpg");
+  width: auto;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+}
+  
+}
